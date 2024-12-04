@@ -1,63 +1,83 @@
-# Bank-Marketing-Advance-Python-Project
-Overview
-This project focuses on analyzing a large dataset containing customer application information from a financial institution. The goal is to extract insights, identify trends, and support decision-making processes such as credit scoring, customer segmentation, and risk assessment.
-#
-Dataset Information#
-Rows: 49,999#
-Columns: 122
-Size: 46.5+ MB
-Data Types:
-Numeric: 64 columns (e.g., income, credit amount, annuity)  
-Categorical: 42 columns (e.g., contract type, gender, document flags)
-Object (Strings): 16 columns (e.g., property ownership, employment details)
-Key Columns
-SK_ID_CURR: Unique ID for each customer.
-TARGET: Binary target variable indicating default status:
-1: Client with payment difficulties.
-0: Client with no payment difficulties.
-NAME_CONTRACT_TYPE: Type of loan (e.g., Cash loans, Revolving loans).
-AMT_CREDIT: Total credit amount for the loan.
-AMT_INCOME_TOTAL: Annual income of the client.
-CNT_CHILDREN: Number of children the client has.
-FLAG_OWN_CAR: Whether the client owns a car.
-FLAG_OWN_REALTY: Whether the client owns property.
-AMT_REQ_CREDIT_BUREAU_X: Frequency of credit inquiries (various timeframes).
-Objectives
-Descriptive Analysis:
-Understand customer demographics and loan preferences.
-Identify correlations between income, credit amount, and default rate.
+# **Bank Market Data Analysis**
 
-Risk Analysis:
-Segment customers based on risk factors like income stability and credit history.
-Assess document and property ownership flags for default probability.
-Steps Undertaken
-Data Cleaning:
-Handle missing values in columns like AMT_REQ_CREDIT_BUREAU_*.
-Normalize numerical variables for better comparisons.
-Exploratory Data Analysis (EDA):
-Visualize income distributions, loan amounts, and default rates.
-Analyze categorical distributions (e.g., gender, contract type).
-Feature Engineering:
-Create derived variables like Debt-to-Income Ratio (DTI).
-Group clients based on demographic or financial characteristics.
-Modeling:
-Apply classification algorithms (e.g., Logistic Regression, Random Forest).
-Evaluate model performance using metrics like ROC-AUC and F1-Score.
-Visualization:
-Generate plots and dashboards to communicate findings effectively.
-Potential Outcomes
-Identification of high-risk customers based on predictive modeling.
-Insights into how demographic and financial variables impact loan performance.
-Recommendations for improving loan approval strategies and minimizing defaults.
+## **Overview**
+This project analyzes customer application data from a financial institution to extract actionable insights.  
+The analysis aims to improve decision-making processes in credit approval and risk management by understanding customer behavior and identifying key trends.
 
+---
 
+## **Dataset Details**
+- **Total Records**: 49,999  
+- **Features**: 122 columns  
+- **File Size**: 46.5+ MB  
 
+### **Key Attributes**
+- **SK_ID_CURR**: Unique customer identifier.  
+- **TARGET**: Loan repayment status (`1`: Default, `0`: Non-default).  
+- **NAME_CONTRACT_TYPE**: Type of loan (e.g., Cash loans, Revolving loans).  
+- **AMT_INCOME_TOTAL**: Annual income of the client.  
+- **AMT_CREDIT**: Total credit amount for the loan.  
+- **CNT_CHILDREN**: Number of children.  
+- **FLAG_OWN_CAR**: Whether the client owns a car.  
+- **FLAG_OWN_REALTY**: Whether the client owns real estate.  
+- **AMT_REQ_CREDIT_BUREAU_X**: Frequency of credit inquiries (various timeframes).  
 
+---
 
+## **Objectives**
+1. **Descriptive Analysis**:  
+   - Understand customer demographics and financial patterns.  
+   - Explore correlations between variables like income, loan amount, and default rate.  
+2. **Data Exploration**:  
+   - Visualize distributions and relationships among different variables.  
+   - Identify any trends or patterns that could influence credit risk.  
+3. **Risk Analysis**:  
+   - Segment customers based on financial behavior and risk levels.  
+   - Analyze the impact of factors like income, credit amount, and ownership on defaults.
 
+---
 
+## **Steps Undertaken**
 
+### **1. Data Cleaning**
+- Handled missing values in critical columns such as `AMT_REQ_CREDIT_BUREAU_*`.  
+- Normalized numerical variables to standardize scales.  
 
+### **2. Exploratory Data Analysis (EDA)**
+- Visualized distributions of income, credit amounts, and default rates.  
+- Analyzed categorical features like gender, contract type, and property ownership.  
+- Explored relationships between income, loan amounts, and default status.
+
+### **3. Feature Engineering**
+- Created new features like `Debt-to-Income Ratio (DTI)`.  
+- Grouped clients based on demographic and financial characteristics.  
+
+### **4. Visualization**
+- Developed plots to communicate key findings effectively:  
+  - Income vs. Default Rate  
+  - Loan Amount Distribution  
+  - Correlation Heatmaps  
+
+---
+
+## **Key Findings**
+- High-income clients tend to have lower default rates, but loan amount relative to income significantly impacts risk.  
+- Customers with multiple credit inquiries are more likely to default.  
+- Ownership of real estate correlates with reduced risk, while car ownership shows minimal impact.  
+
+---
+
+## **Technologies Used**
+- **Python Libraries**:  
+  - `pandas`, `numpy` for data manipulation  
+  - `matplotlib`, `seaborn` for visualization  
+- **Jupyter Notebook** for code and documentation  
+
+---
+
+## **Future Work**
+- Expand analysis with additional datasets, such as transaction history.  
+- Create dashboards for non-technical stakeholders to visualize key insights.  
 
 
 
