@@ -1,13 +1,13 @@
 # Bank-Marketing-Advance-Python-Project
 Overview
 This project focuses on analyzing a large dataset containing customer application information from a financial institution. The goal is to extract insights, identify trends, and support decision-making processes such as credit scoring, customer segmentation, and risk assessment.
-
-Dataset Information
-Rows: 49,999
+#
+Dataset Information#
+Rows: 49,999#
 Columns: 122
 Size: 46.5+ MB
 Data Types:
-Numeric: 64 columns (e.g., income, credit amount, annuity)
+Numeric: 64 columns (e.g., income, credit amount, annuity)  
 Categorical: 42 columns (e.g., contract type, gender, document flags)
 Object (Strings): 16 columns (e.g., property ownership, employment details)
 Key Columns
